@@ -3,10 +3,13 @@ Welcome to my homelab! 🧑‍🔬 This repo contains the documentation, topolog
 
 Current stack:
 
-Switching: 3x Cisco 3750X  
-Virtualization: Docker + lightweight containers 
-Wireless: TBD
-Firewall: TBD (mini PC + OPNsense) 
+* Switching: 3x Cisco 3750X  
+* Virtualization: Docker + lightweight containers 
+* Wireless: TBD
+* Firewall: TBD (mini PC + OPNsense) 
 
 Goals
 
+* Prep for CCNA
+* Learn networking + security concepts
+* Self-host and secure network services
