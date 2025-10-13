@@ -49,7 +49,7 @@ Here goes nothin'
 
 Well I'll be darned, I followed the documentation and it worked. 
 
-Per the documentation on <a href="https://hub.docker.com/r/kalilinux/kali-rolling">Docker Hub</a>, I'll go with 
+Now to get some tools installed. Per the documentation on <a href="https://hub.docker.com/r/kalilinux/kali-rolling">Docker Hub</a>, I'll go with 
 
     apt update && apt -y install kali-linux-headless
 
