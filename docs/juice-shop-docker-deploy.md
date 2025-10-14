@@ -25,7 +25,7 @@ info: Server listening on port 3000
 ```
 I opted not to run the container with the --rm flag as I'd like it to persist while I explore it for the first time. When I try to access the server, I get "This site can't be reached". Ok, what's wrong and what happened?
 
-I try something else, running the same command as above with port 3001 instead. I notice the container checks for port 3000 to be available. It's very likely not going to work on 3001. Let's try running it with the --rm flag. Still no joy.
+I try something else, running the same command as above with port 3001 instead. I notice Juice Shop checks for port 3000 to be available during startup validations. It's very likely not going to work on 3001. Let's try running it with the --rm flag. Still no joy.
 
 
 Consulting the <a href="https://pwning.owasp-juice.shop/companion-guide/latest/part1/running.html">source's</a> documentation, we see a different command for running the Docker container:
