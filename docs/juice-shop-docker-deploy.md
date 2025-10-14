@@ -1,4 +1,4 @@
-This'll be a quick one. Note that sudo has been included in all docker commands, as I'm not giving carte blanche to root on my system. See the <a href="https://docs.docker.com/engine/security/#docker-daemon-attack-surface">Docker Daemon Attack Surface</a> article for details.
+In this document I'm going to be covering the deployment of Juice Shop in home lab. Note that sudo has been included in all docker commands, as I'm not giving carte blanche to root on my system. See the <a href="https://docs.docker.com/engine/security/#docker-daemon-attack-surface">Docker Daemon Attack Surface</a> article for details.
 
 From the <a href="https://hub.docker.com/r/bkimminich/juice-shop#setup">Docker Hub juice shop page</a>:
 
@@ -42,7 +42,7 @@ sudo docker ps -a
 CONTAINER ID   IMAGE                    COMMAND                  CREATED              STATUS                     PORTS                      NAMES
 a11f63a8097c   bkimminich/juice-shop    "/nodejs/bin/node /j…"   About a minute ago   Up About a minute          127.0.0.1:3000->3000/tcp   affectionate_noyce
 ```
-Still no joy when navigating to http://localhost:3000. So much for a quick one. 
+Still no joy when navigating to http://localhost:3000.
 
 
 
