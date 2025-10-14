@@ -1,6 +1,6 @@
 This'll be a quick one. Note that sudo has been included in all docker commands, as I'm not giving carte blanche to root on my system. See the <a href="https://docs.docker.com/engine/security/#docker-daemon-attack-surface">Docker Daemon Attack Surface</a> article for details.
 
-From the Docker Hub juice shop page <a href="https://hub.docker.com/r/bkimminich/juice-shop#setup">Docker Hub</a>:
+From the <a href="https://hub.docker.com/r/bkimminich/juice-shop#setup">Docker Hub juice shop page</a>:
 
 ```
 sudo docker pull bkimminich/juice-shop
