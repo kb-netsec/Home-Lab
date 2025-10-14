@@ -32,6 +32,6 @@ Consulting the <a href="https://pwning.owasp-juice.shop/companion-guide/latest/p
 
 ```
 sudo docker run -d -p 127.0.0.1:3000:3000 bkimminich/juice-shop
-
-  
+```
+I try this and observe that this time the app doesn't even begin startup validations. 
 
