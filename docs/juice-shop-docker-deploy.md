@@ -32,6 +32,19 @@ Consulting the <a href="https://pwning.owasp-juice.shop/companion-guide/latest/p
 
 ```
 sudo docker run -d -p 127.0.0.1:3000:3000 bkimminich/juice-shop
+a11f63a8097cc203b98b879de423ba3cfce638f16a44ffbd88dc5d6fa6b700dc
 ```
-I try this and observe that this time the app doesn't even begin startup validations. 
+
+I try this and observe that this time the app doesn't even begin startup validations. Instead, I get a bunch of seemingly gibberish. It does appear however that teh container is at least running. 
+
+```
+sudo docker ps -a
+CONTAINER ID   IMAGE                    COMMAND                  CREATED              STATUS                     PORTS                      NAMES
+a11f63a8097c   bkimminich/juice-shop    "/nodejs/bin/node /j…"   About a minute ago   Up About a minute          127.0.0.1:3000->3000/tcp   affectionate_noyce
+```
+Still no joy when navigating to http://localhost:3000. So much for a quick one. 
+
+
+
+
 
