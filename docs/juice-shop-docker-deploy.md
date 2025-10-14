@@ -44,6 +44,13 @@ a11f63a8097c   bkimminich/juice-shop    "/nodejs/bin/node /j…"   About a minut
 ```
 Still no joy when navigating to http://localhost:3000.
 
+At this point, I remove the Juice Shop image.
+
+```
+sudo docker rmi <image-id>
+```
+I follow the process above to download the image again. 
+
 
 
 
