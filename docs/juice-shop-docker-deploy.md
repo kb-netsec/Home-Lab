@@ -62,8 +62,29 @@ tcp6       0      0 :::3000                 :::*                    LISTEN      
 
 Ok, there are services listening on 3000. 
 
-At this point, I begin to suspect 
+At this point, I begin to suspect there's something wrong with the Juice Shop container. I decide to remove it and download it again:
 
+```
+#Check ID of juice-shop image
+sudo docker images
+REPOSITORY               TAG       IMAGE ID       CREATED        SIZE
+kalilinux/kali-rolling   latest    5d4447aae541   9 days ago     124MB
+bkimminich/juice-shop    latest    df3c7e65b133   5 weeks ago    421MB
+hello-world              latest    1b44b5a3e06a   2 months ago   10.1kB
+
+#Remove juice-shop image
+sudo docker rmi df3c7e65b133
+
+#Download juice-shop again
+sudo docker pull bkimminich/juice-shop
+
+#Run juice-shop
+sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
+```
+
+I open a browser and navigate to http://localhost:3000 and...success! 🎉
+
+I'm now running JS from my Docker container. This allows me to practice exploiting vulnerable modern web apps in a lightweight lab all from my laptop!
 
 
 
