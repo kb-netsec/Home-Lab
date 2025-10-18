@@ -49,7 +49,21 @@ At this point, I remove the Juice Shop image.
 ```
 sudo docker rmi <image-id>
 ```
-I follow the process above to download the image again. 
+
+I follow the process above to download the image again. Like before, the server refuses to listen on port 3000. I decide to see if this port is being blocked. First, let's see if there are even any services listening on 3000.
+
+```
+netstat -tulpen | grep "3000"
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+tcp        0      0 0.0.0.0:3000            0.0.0.0:*               LISTEN      0          81299      -                   
+tcp6       0      0 :::3000                 :::*                    LISTEN      0          81300      -
+```
+
+Ok, there are services listening on 3000. 
+
+At this point, I begin to suspect 
+
 
 
 
