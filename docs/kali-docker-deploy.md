@@ -40,10 +40,9 @@ Let's check the size
     REPOSITORY               TAG       IMAGE ID       CREATED        SIZE
     kalilinux/kali-rolling   latest    5d4447aae541   5 days ago     124MB
 
-Hah! 124 megs. That beats the pants off of even a live boot USB, and especially a VM. Mind, this is headless and without tools by default, but I'm going for terminal profifiency and potato compute here. I can't complain.  We'll see how big it is after installing tools. 
+Mind, this is headless and without tools by default, but I'm going for terminal profifiency and potato compute here. I went back and checked - after installing tools the VM is just over 12GB. Not bad.
 
-
-Here goes nothin'
+Let's fire it up. Here goes nothin'
 
     docker run --tty --interactive kalilinux/kali-rolling
 
