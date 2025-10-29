@@ -5,7 +5,7 @@ Current stack:
 
 * Switching: 3x Cisco 3750X  
 * Virtualization: Docker + lightweight containers 
-* Wireless: TBD
+* Wireless: Microtik RB951Ui-2HnD
 * Firewall: TBD (mini PC + OPNsense) 
 
 Goals
