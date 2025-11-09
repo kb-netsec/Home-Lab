@@ -11,5 +11,21 @@ web server that points to an unintended path. For example, instead of
 https://insecure-website.com/loadImage?filename=../../../etc/passwd
 ```
 
+The first lab presents a shopping website with the objective of retrieving he contents of /etc/passwd. 
 
+I first began intercepting HTTP traffic with Burp's proxy. When a request was made to the server to fetch the product images, it was a simple task of modifying the filename. For example, in the first GET request, turning
+
+```
+GET /image?filename=38.jpg HTTP/2
+```
+
+Into 
+
+```
+GET /image?filename=../../../etc/passwd HTTP/2
+```
+
+We can see doing so sends a WebSocket response to the client containing some HTML that modifies the lab banner on the site to show the lab is solved and a congratulatory pop-up. And here I was hoping for the contents of an actual passwd file...
+
+See you in the next write up!
 
