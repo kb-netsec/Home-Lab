@@ -4,6 +4,12 @@ Date: 11/08/2025
 
 URL: https://portswigger.net/web-security/learning-paths/server-side-vulnerabilities-apprentice/path-traversal-apprentice/file-path-traversal/what-is-path-traversal
 
+Lab URL: https://0ad40060044768f580581c7d003a00db.web-security-academy.net/
+
+Environment: Portswigger Web Security Academy - Path Traversal Lab, Burp Suite Community Edition (proxy & browser)
+
+## Summary
+
 As part of my introduction to cyber security and pentesting, I'll be learning BurpSuite. I've installed the 
 Community Edition and am going through the web security academy.
 
