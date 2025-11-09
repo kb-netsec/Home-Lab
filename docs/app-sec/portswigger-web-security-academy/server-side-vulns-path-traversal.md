@@ -71,7 +71,7 @@ We can see doing so sends a WebSocket response to the client containing some HTM
 
 ## Impact
 
-Of course we don't get the actual contents of a passwd file in the lab. However, had this been a real target, the severity could have been high depending on the sensitivity of the arbitrary file contents provided. 
+Successful exploitation allows an attacker to read or write arbitrary files in the server's file system. This could expose sensitive credentials, code, and data depending upon the file structure and permissions present, resulting in a medium to high severity. 
 
 ## Remediation
 
@@ -82,4 +82,4 @@ In the event this isn't possible, there are two layers of defense that can be us
 * Validate the user input before processing it. Ideally, compare the user input with a whitelist of permitted values. If that isn't possible, verify that the input contains only permitted content, such as alphanumeric characters only.
 * After validating the supplied input, append the input to the base directory and use a platform filesystem API to canonicalize the path. Verify that the canonicalized path starts with the expected base directory.
 
-Portswigger goes on to provide some code examples. While I'm not familiar enough with JavaScript to implement this yet, knowing of these attack's existence will be useful in my journey, and I will eventually learn enough programming to defend against them!
+This lab emphasized the importance of sanitizing inputs and secure file handling practices in web applications. 
