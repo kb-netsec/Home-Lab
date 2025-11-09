@@ -1,5 +1,9 @@
+# Server Side Vulnerabilities - Path Traversal
+Date: 11/08/2025
+URL: https://portswigger.net/web-security/learning-paths/server-side-vulnerabilities-apprentice/path-traversal-apprentice/file-path-traversal/what-is-path-traversal
+
 As part of my introduction to cyber security and pentesting, I'll be learning BurpSuite. I've installed the 
-Community Edition and am going through the web security academy. 
+Community Edition and am going through the web security academy.
 
 The first learning path I chose was the server-side vulnerabilities path. 
 
