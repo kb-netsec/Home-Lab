@@ -13,7 +13,7 @@ Environment: Portswigger Web Security Academy - Path Traversal Lab, Burp Suite C
 As part of my introduction to cyber security and pentesting, I'll be learning Burp Suite. I've installed the 
 Community Edition and am going through the web security academy.
 
-The first vulnerability I learned about was path traversal, where you can read (or even write!) arbitrary server files that the developer or admin did not intend to be public. This is done by requesting a URL on an insecure web server that points to an unintended path. For example, instead of 
+The first vulnerability I learned about was path traversal, where you can read (or even write!) arbitrary server files that the developer or admin did not intend to be public. This is done by requesting a URL on an insecure web server that points to an unintended path. For example:
 
 ```
 https://insecure-website.com/loadImage?filename=../../../etc/passwd
@@ -71,7 +71,7 @@ We can see doing so sends a WebSocket response to the client containing some HTM
 
 ## Impact
 
-Successful exploitation allows an attacker to read or write arbitrary files in the server's file system. This could expose sensitive credentials, code, and data depending upon the file structure and permissions present, resulting in a medium to high severity. 
+Successful exploitation allows an attacker to read or write arbitrary files in the server's file system. This could expose sensitive credentials, code, and data depending on the file structure and permissions, potentially resulting in a medium to high severity issue.
 
 ## Remediation
 
